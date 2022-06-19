@@ -11,20 +11,20 @@
 
 <body>
     <header>
-        <!-- <nav>
-            <img src="Images/new logo.png" alt="LTCE logo" />
+        <nav>
             <div id="topbar-wrapper">
-                <div>
-                    <a> HOME </a>
+                <img id="logo" src="Images/new logo.png" alt="LTCE logo" />
+                <div class="topbar-item">
+                    <a href="index.html"> HOME </a>
                 </div>
-                <div>
+                <div class="topbar-item">
                     <a> ABOUT US </a>
                 </div>
-                <div>
+                <div class="topbar-item">
                     <a> COURSE </a>
                 </div>
-                <div class="dropdown">
-                    <a> DEPARTMENT </a>
+                <div class="dropdown topbar-item dept">
+                    <a class="dept" d> DEPARTMENT </a>
                     <div id="dropdown-wrapper">
                         <a href="https://ltce.in/com_dep_about"> Computer Engineering </a> <br />
                         <a href="https://ltce.in/mechanical_engg_about"> Mechanical Engineering </a> <br />
@@ -36,11 +36,11 @@
                         <a href="https://ltce.in/1st_year_dep_about"> First Year </a> <br />
                     </div>
                 </div>
-                <div>
+                <div class="topbar-item">
                     <a> CONTACT US </a>
                 </div>
             </div>
-        </nav> -->
+        </nav>
         <div id="background">
             <h1 id="contact-us"> Contact Us </h1>
         </div>
@@ -52,48 +52,46 @@
     <main>
         <div class="container">
             <div class="content">
-              <div class="left-side">
-                <div class="address details">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <div class="topic">Address</div>
-                  <div class="text-one">Vikas Nagar, Gyan Vikas Road, Sector 4 </div>
-                  <div class="text-two">Kopar Khairane, Navi Mumbai, Maharashtra 400709</div>
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Vikas Nagar, Gyan Vikas Road, Sector 4 </div>
+                        <div class="text-two">Kopar Khairane, Navi Mumbai, Maharashtra 400709</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+91 22 2754 1005</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">principal@ltce.in</div>
+                        <div class="text-two">principal.ltce@ltce.in</div>
+                    </div>
                 </div>
-                <div class="phone details">
-                  <i class="fas fa-phone-alt"></i>
-                  <div class="topic">Phone</div>
-                  <div class="text-one">+91 22 2754 1005</div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p> Email us for your query. </p>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div id="msg-box" class="input-box message-box">
+                            <textarea placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now">
+                        </div>
+                    </form>
                 </div>
-                <div class="email details">
-                  <i class="fas fa-envelope"></i>
-                  <div class="topic">Email</div>
-                  <div class="text-one">principal@ltce.in</div>
-                  <div class="text-two">info.codinglab@gmail.com</div>
-                </div>
-              </div>
-              <div class="right-side">
-                <div class="topic-text">Send us a message</div>
-                <p> Email us for your query. </p>
-              <form action="#">
-                <div class="input-box">
-                  <input type="text" placeholder="Enter your name">
-                </div>
-                <div class="input-box">
-                  <input type="text" placeholder="Enter your email">
-                </div>
-                <div id="msg-box" class="input-box message-box">
-                  <textarea placeholder="Enter your message"></textarea>
-                </div>
-                <div class="button">
-                  <input type="button" value="Send Now" >
-                </div>
-              </form>
             </div>
-            </div>
-          </div>
+        </div>
     </main>
 </body>
 
 </html>
-
-  
