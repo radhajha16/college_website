@@ -1,0 +1,285 @@
+/* Topbar Styling Starts */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)); */
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+}
+
+#logo
+{
+    width: 70px;
+    position: relative;
+    left: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(115, 137, 236, 0.5);
+}
+
+nav img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    top: 20px;
+    right: -60px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul
+{
+    position: relative;
+    top: -20px;
+    right: 80px;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(126, 126, 218);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+#dropdown-wrapper
+{
+    width: 20%;
+    text-align: center;
+    border: none;
+    position: absolute;
+    top: 35px;
+    right: 120px;
+    z-index: 1;
+    display: none;
+    padding: 8px 0px;
+    line-height: 2;
+    background: rgba(135, 206, 235, 0.9);
+}
+
+#dropdown-wrapper > a
+{
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 2px;
+}
+
+#dropdown-wrapper > a:hover
+{
+    border-bottom: 1px solid gray;
+    transition: 0.5s;
+}
+
+#department:hover + #dropdown-wrapper
+{
+    display: inline;
+}
+
+#dropdown-wrapper:hover
+{
+    display: inline;
+}
+
+#dropdown-wrapper > a
+{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 700px){
+     .text-box h1{
+        font-size: 20px;
+     }
+     .nav-links ul li{
+        display: block;
+     }
+     .nav-links{
+        position: absolute;
+        background: #7389ec;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+     }
+    .nav-links ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #7389ec;
+        z-index: 2;
+    }
+    #dropdown-wrapper
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #7389ec;
+        z-index: 2;
+    }
+}
+
+/* Topbar Styling End */
+main
+{
+    text-align: center;
+}
+
+#dept-head
+{
+    width: 90%;
+    height: 10vh;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: rgba(37, 231, 245, 0.4);
+    border-radius: 8px;
+}
+#about
+{
+    margin: 5px 15px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about > p
+{
+    display: inline;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background-color: rgba(135, 206, 235, 0.3);
+    border-radius: 10px;
+}
+
+#lab
+{
+    float: right;
+    margin-left: 15px;
+}
+
+#other-detail
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#vision
+{
+    width: 50vw;
+}
+
+#mission
+{
+    width: 50vw;
+}
+
+.summary
+{
+    background-color: rgba(255, 228, 196, 0.2);
+}
+
+@media(max-width: 700px){
+    .header
+    {
+        position: absolute;
+    }
+    .nav-links
+    {
+        display: none;
+    }
+    #about
+    {
+        display: flex;
+        width: 95%;
+        line-height: 1.8;
+    }
+    #about > p
+    {
+        width: 100%;
+        padding: 12px 8px;
+    }
+    #vision, #mission, #lab
+    {
+        display: block;
+        width: 95vw;
+    }
+    #vision, #mission
+    {
+        position: relative;
+    }
+}
+
+@media(max-width: 1330px) and (min-width: 700px)
+{
+    #about > p
+    {
+        width: 55%;
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    #about > img
+    {
+        width: 40%;
+        height: 435px;
+    }
+    #mission
+    {
+        text-align: justify;
+        margin-left: 25px;
+        padding-right: 15px;
+    }
+    #vision
+    {
+        padding-left: 5px;
+    }
+}
